@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/topFrame"
+        android:layout_width="match_parent"
+        android:layout_height="169dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-50dp"
+            android:text="NEON SHOWCASE"
+
+
+            android:textAlignment="center"
+            android:textColor="#00DDFA"
+            android:textSize="24dp"
+
+
+            />
+
+        <ImageButton
+            android:id="@+id/food_btn"
+            android:layout_width="130dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="80dp"
+            android:background="@color/black"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/food_btn"
+
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/sweets_btn"
+            android:layout_width="130dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="255dp"
+            android:layout_marginTop="80dp"
+            android:background="@color/black"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/sweets_btn"
+
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="411dp"
+        android:layout_height="562dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        android:background="@drawable/open_night"
+        android:scaleX="1.3"
+        tools:ignore="UnknownId">
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
